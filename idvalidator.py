@@ -27,8 +27,3 @@ class IdValidator:
         for multiple_code, code in zip(multiple_codes, self.MULTIPLE_NUM):
             multiple_sum += multiple_code * code
         return multiple_sum % 10 == 0
-
-if __name__ == '__main__':
-    test_id = 'B122933877'
-    validator = IdValidator()
-    print(validator.validate(test_id))
